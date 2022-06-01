@@ -7,4 +7,8 @@ for letter in "abcdefghijklmnopqrstuvwxyz":
         break
     parameters[letter] = int(x)
 
-print("RPN: " + Parser().convert(input("Unesite izraz: "), parameters))
+parser = Parser()
+izraz = input("Unesite izraz: ")
+izraz_postfix = parser.convert(izraz, parameters)
+print(f"RPN: {izraz_postfix}")
+print(f"Rezultat: {parser.evaluate(izraz, parameters)}")
