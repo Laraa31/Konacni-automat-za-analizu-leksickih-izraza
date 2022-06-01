@@ -2,7 +2,7 @@ from ganit import Parser
 
 parameters = {}
 for letter in "abcdefghijklmnopqrstuvwxyz":
-    x = input(f"Unesite vrijednost za parametar {letter}: ")
+    x = input(f"Unesite vrijednost za parametar {letter} (Za izalaz unesite EXIT): ")
     if x == "EXIT":
         break
     parameters[letter] = int(x)
